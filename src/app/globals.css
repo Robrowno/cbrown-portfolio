@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.home-content,
+.rallying-content {
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.home-content p:first-child,
+.rallying-content p:first-child {
+    margin-top: 6rem;
+}
+
+.button-row {
+    display: flex;
+    margin-top: 7rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 40px;
+}
