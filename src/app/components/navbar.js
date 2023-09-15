@@ -16,7 +16,7 @@ function Navbar() {
     return (
         <header>
             {/* Desktop Menu */}
-            <nav className="bg-gray-800 text-white py-4">
+            <nav className="w-full mx-auto z-50 bg-gray-800 shadow text-white py-4 fixed top-0">
                 <div className="container mx-auto flex justify-between items-center">
                     <Link href="/" className="text-3xl font-bold">Christian Brown</Link>
                     <ul className="space-x-8 hidden sm:flex">
@@ -31,9 +31,9 @@ function Navbar() {
                         <BsList className="text-3xl w-8 h-8 text-white mobile-menu-button" />
                     </div>
                 </div>
-                <div className={navbarOpen ? "fixed top-0 left-0 w-[75%] sm:hidden h-screen bg-[#ecf0f3] p-6 ease-in-out duration-500" : "fixed left-[-100] top-0 p-10 ease-in-out duration-500 hidden"}>
+                <div className={navbarOpen ? "fixed top-0 left-0 w-[88%] sm:hidden h-screen bg-[#ecf0f3] p-6 ease-in-out duration-500" : "fixed left-[-100] top-0 p-10 ease-in-out duration-500 hidden"}>
                     <div onClick={toggleNavbar} className="flex justify-end w-full items-center">
-                        <BsX className="text-3xl w-8 h-8 text-black mobile-menu-button" />
+                        <BsX className="text-3xl w-9 h-9 text-black mobile-menu-button border-2 border-black rounded-lg" />
                     </div>
                     {/* Mobile Menu links */}
                     <div className="flex-col py-4">

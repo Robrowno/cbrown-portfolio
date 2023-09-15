@@ -1,15 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
     return (
         <section>
-            <div className="grid grid-cols-1 md:grid-cols-4">
-                <div className="col-span-1 md:col-span-3 row-span-full bg-slate-300">
+            <div className="grid grid-cols-1 md:grid-cols-4 gradient-grey">
+                <div className="col-span-1 md:col-span-3 row-span-full my-10 py-7">
                     <h1 className="text-3xl font-bold text-center mt-2">Home</h1>
 
                     <div className="home-content">
                         <p>
-                            Welcome to my website! I am a Full-Stack software developer and rally co-driver based in the UK.
+                            Welcome to my website! I am a <span className="font-semibold">Full-Stack Software Developer</span> and <span className="font-semibold">Rally Co-driver</span> based in the UK.
                             I am currently working towards a BSc in Computer Science at the University of West London (2023-2026), after a successful completion of
                             the Xander Talent Academy in London and attaining an EQF Level 5 diploma in Full-Stack Software Development from Code Institute in March 2023.
                         </p>
@@ -30,12 +31,14 @@ export default function Home() {
                             <Link href="/resume">Resume</Link>
                         </button>
                     </div>
+                    <hr className="md:hidden" />
                 </div>
 
-                <div className="col-span-1 md:col-span-1 bg-slate-400">
-                    <img src="/images/me_in_france.jpeg" alt="Me in France" className="object-cover" />
+                <div className="col-span-1 md:col-span-1">
+                    <Image src="/images/me_in_france.jpeg" alt="Me in France" className="object-cover border-left responsive-image hidden md:block" width={480} height={620} />
                 </div>
             </div>
+            <hr className="hidden md:block" />
 
         </section>
 
