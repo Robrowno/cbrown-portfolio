@@ -66,6 +66,12 @@ hr {
     margin: 0 40px;
 }
 
+
+#logo-footer {
+    width: 4.5%;
+    height: 4.5%;
+}
+
 @media (min-width: 1900px) {
     .logoplusname {
         position: relative;

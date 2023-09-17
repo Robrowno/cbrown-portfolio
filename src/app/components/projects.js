@@ -85,7 +85,7 @@ export default function Projects() {
         <section id="projects">
             <div className="projects-content gradient-grey">
                 <div>
-                    <h3 className="text-center text-3xl font-bold">Projects</h3>
+                    <h3 className="text-center text-3xl font-bold pt-3">Projects</h3>
                 </div>
                 <div className="flex animate-slideUpCubiBezier animation-delay-2 flex-col-reverse space-y-24 space-y-reverse pb-8 pt-8">
                     {projects.map((project, idx) => {
