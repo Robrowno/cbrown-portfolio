@@ -6,7 +6,7 @@ export default function Rallying() {
         <section>
             <div className="grid grid-cols-1 md:grid-cols-4 gradient-grey">
                 <div className="col-span-1 md:col-span-2">
-                    <img src="/images/mini-fast-pic.JPG" alt="a mini rally car driving at high speed on track" className="object-cover md:border-right responsive-image" />
+                    <img src="/images/mini-fast-pic.JPG" alt="a mini rally car driving at high speed on track" className="object-cover border-right responsive-image" />
                 </div>
                 <div className="col-span-1 md:col-span-2">
                     <h2 className="text-center text-3xl font-bold mt-3">Rallying</h2>

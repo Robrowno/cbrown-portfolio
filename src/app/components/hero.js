@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <section>
             <div className="grid grid-cols-1 md:grid-cols-4 gradient-grey">
-                <div className="col-span-1 md:col-span-3 row-span-full my-10 py-7">
+                <div className="col-span-1 md:col-span-3 row-span-full my-12 py-7">
                     <h1 className="text-3xl font-bold text-center mt-2">Home</h1>
 
                     <div className="home-content">

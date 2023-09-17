@@ -9,6 +9,11 @@
     --red-hover-btn:
 }
 
+#logo {
+    width: 15%;
+    height: 15%;
+}
+
 .gradient-grey {
     background: var(--gradient-grey);
 }
@@ -29,7 +34,7 @@ hr {
 }
 
 .border-right {
-    border-right: 3px solid black;
+    border-right: 2px solid black;
 }
 
 .home-content,
@@ -54,7 +59,19 @@ hr {
     padding: 0 40px;
 }
 
+.paragraph-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+}
 
+@media (min-width: 1900px) {
+    .logoplusname {
+        position: relative;
+        right: 10%;
+    }
+}
 
 @media (max-width: 1534px) {
 
@@ -69,6 +86,51 @@ hr {
         height: 100%;
     }
 }
+
+@media (max-width: 768px) {
+
+    #logo {
+        width: 30%;
+        height: 30%;
+    }
+
+    #name {
+        position: relative;
+        left: -5%;
+    }
+}
+
+@media screen and (min-width: 707px) and (max-width: 767px) {
+    .logoplusname {
+        position: relative;
+        right: 7%;
+    }
+
+    #name {
+        font-size: 1.1rem;
+    }
+
+    ul {
+        font-size: smaller;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 706px) {
+
+    .logoplusname {
+        position: relative;
+        right: 2%;
+    }
+
+    #name {
+        font-size: 1.1rem;
+    }
+
+    ul {
+        font-size: smaller;
+    }
+}
+
 
 @media (max-width: 400px) {
 
