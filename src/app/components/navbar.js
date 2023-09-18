@@ -21,7 +21,7 @@ function Navbar() {
                 <div className="container max-h-10 mx-auto flex justify-between items-center">
                     <div className="flex items-center logoplusname">
                         <img id="logo" src="/my_logo.png" alt="logo of letter C" />
-                        <Link id="name" href="/" className="text-xl md:text-2xl lg:text-3xl font-bold">Christian Brown</Link>
+                        <Link id="myname" href="/" className="text-xl md:text-2xl lg:text-3xl font-bold">Christian Brown</Link>
                     </div>
 
                     <ul className="space-x-8 hidden sm:flex">

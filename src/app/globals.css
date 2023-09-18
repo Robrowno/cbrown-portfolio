@@ -72,6 +72,12 @@ hr {
     height: 4.5%;
 }
 
+
+
+/* Media Queries */
+
+
+
 @media (min-width: 1900px) {
     .logoplusname {
         position: relative;
@@ -100,7 +106,7 @@ hr {
         height: 30%;
     }
 
-    #name {
+    #myname {
         position: relative;
         left: -5%;
     }
@@ -112,7 +118,7 @@ hr {
         right: 7%;
     }
 
-    #name {
+    #myname {
         font-size: 1.1rem;
     }
 
@@ -128,7 +134,7 @@ hr {
         right: 2%;
     }
 
-    #name {
+    #myname {
         font-size: 1.1rem;
     }
 
