@@ -11,9 +11,10 @@ export default function Rallying() {
                 <div className="col-span-1 md:col-span-2">
                     <h2 className="text-center text-3xl font-bold mt-3">Rallying</h2>
                     <div className="rallying-content">
+
                         <p>
                             I have been actively competing in Rallying since early 2022, where I started as a driver and currently compete as a co-driver.
-                            I've got experience on single and multi venue events, gravel and closed-road tarmac events and am comfortable going sideways at 100mph!
+                            I have experience on single and multi venue events, gravel and closed-road tarmac events and am comfortable going sideways at 100mph!
                         </p>
                         <br />
                         <p>
