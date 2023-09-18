@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        '3xl': '2000px',
+      },
       animation: {
         slideUpCubiBezier: 'slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) both',
       },
