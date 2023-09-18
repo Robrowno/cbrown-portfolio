@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import Link from 'next/link';
 
 function ContactForm() {
     const [state, handleSubmit] = useForm("xqkvlojn");
