@@ -32,11 +32,11 @@ export default function About() {
                             I also had my debut as a Co-Driver in 2023, entering the Mini Rally Challenge again, with standalone co-drives dotted in-between, including my first closed road event at the Corbeau Seats Clacton Rally in a Ford Puma.
                             I&apos;ve since had several podium finishes in the Mini Challenge and gained a lot more experience to take forward with me for the next season.
                         </p>
-                        <Image className="mx-auto mb-2 shadow-lg" src="/images/code-institute-diploma.png" alt="a picture of my code institute diploma" width={700} height={450} />
+                        <Image className="mx-auto mb-2 shadow-lg rounded-sm" src="/images/code-institute-diploma.png" alt="a picture of my code institute diploma" width={700} height={450} />
                         <p> In Regards to Software, I graduated from the Xander Academy in May 2023, and have since decided to start a Degree at the University of West London studying a BSc in Computer Science.
                             I am now actively searching for internship and work experience opportunities to take on whilst working towards my degree. I can&apos;t wait to see where this new journey takes me!</p>
 
-                        <Image className="mx-auto mb-2 shadow-lg" src="/images/xander-c9.JPG" alt="a group photo of the xander academy cohort 9" width={700} height={400} />
+                        <Image className="mx-auto mb-2 shadow-lg rounded-sm" src="/images/xander-c9.JPG" alt="a group photo of the xander academy cohort 9" width={700} height={400} />
                         <p className="text-sm text-gray-600">Xander Academy Cohort 9</p>
                     </div>
 
@@ -64,10 +64,12 @@ export default function About() {
                         <span className="bg-blue-200 text-blue-700 px-3 py-1 rounded-full shadow-md">Cloudinary</span>
                         <span className="bg-blue-200 text-blue-700 px-3 py-1 rounded-full shadow-md">Agile Methodologies</span>
                         <span className="bg-blue-200 text-blue-700 px-3 py-1 rounded-full shadow-md">Clean Code</span>
+                        <span className="bg-blue-200 text-blue-700 px-3 py-1 rounded-full shadow-md">VSCode</span>
                     </div>
                     <h2 className="text-2xl font-bold mt-5">Currently Learning:</h2>
                     <div className="flex flex-wrap justify-center gap-2 mt-4">
                         <span className="bg-green-200 text-green-700 px-3 py-1 rounded-full shadow-md">Java</span>
+                        <span className="bg-green-200 text-green-700 px-3 py-1 rounded-full shadow-md">IntelliJ IDEA</span>
                         <span className="bg-green-200 text-green-700 px-3 py-1 rounded-full shadow-md">Selenium</span>
                         <span className="bg-green-200 text-green-700 px-3 py-1 rounded-full shadow-md">MongoDB</span>
                         <span className="bg-green-200 text-green-700 px-3 py-1 rounded-full shadow-md">NextJS v13</span>
