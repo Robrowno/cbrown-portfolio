@@ -1,5 +1,23 @@
 
+
+const projectsInProgress = [
+
+    {
+        name: "Rally News",
+        description: "Pulling Rally news into one location for users to enjoy! Practicing using selenium, Python and MongoDB",
+        image: "",
+        github: "",
+        tag: "Being worked on...",
+        tech: [],
+    },
+
+]
+
+
+
 export default function Projects() {
+
+
     return (
         <div className="min-h-screen">
             <div className="py-10 my-10">
