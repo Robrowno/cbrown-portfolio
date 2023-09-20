@@ -13,7 +13,6 @@ const projectsInProgress = [
 ]
 
 
-
 export default function ProjectsPage() {
 
 
