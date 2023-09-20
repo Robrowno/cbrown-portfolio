@@ -32,7 +32,7 @@ export default function About() {
                             I also had my debut as a Co-Driver in 2023, entering the Mini Rally Challenge again, with standalone co-drives dotted in-between, including my first closed road event at the Corbeau Seats Clacton Rally in a Ford Puma.
                             I've since had several podium finishes in the Mini Challenge and gained a lot more experience to take forward with me for the next season.
                         </p>
-                        <Image className="mx-auto mb-2 shadow-lg" src="/images/code-institute-diploma.png" width={700} height={450} />
+                        <Image className="mx-auto mb-2 shadow-lg" src="/images/code-institute-diploma.png" alt="a picture of my code institute diploma" width={700} height={450} />
                         <p> In Regards to Software, I graduated from the Xander Academy in May 2023, and have since decided to start a Degree at the University of West London studying a BSc in Computer Science.
                             I am now actively searching for internship and work experience opportunities to take on whilst working towards my degree. I can't wait to see where this new journey takes me!</p>
 
