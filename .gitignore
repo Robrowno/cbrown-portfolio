@@ -37,3 +37,13 @@ next-env.d.ts
 
 #images
 .public
+
+# test API routes and pages to ignore for now
+
+# API routes and pages for access to CRUD functionality in future
+.src/app/api
+.src/app/addResults
+.src/app/secretLogin
+
+# scripts used to populate the database with dummy data
+.scripts

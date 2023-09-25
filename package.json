@@ -11,8 +11,10 @@
   "dependencies": {
     "@formspree/react": "^2.5.1",
     "autoprefixer": "10.4.15",
+    "dotenv": "^16.3.1",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
+    "mongoose": "^7.5.2",
     "next": "13.4.19",
     "nodemailer": "^6.9.5",
     "postcss": "8.4.29",
