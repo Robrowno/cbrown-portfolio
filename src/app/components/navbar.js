@@ -53,10 +53,18 @@ function Navbar() {
                         </ul>
                     </div>
                     <div className="flex flex-row justify-around items-center py-4 px-2">
-                        <BsInstagram className="text-3xl w-8 h-8 text-black" />
-                        <BsGithub className="text-3xl w-8 h-8 text-black" />
-                        <BsLinkedin className="text-3xl w-8 h-8 text-black" />
-                        <BsFacebook className="text-3xl w-8 h-8 text-black" />
+                        <a href="https://www.instagram.com/cbrownrally/" rel="noreferrer" target="_blank">
+                            <BsInstagram className="text-3xl w-8 h-8 hover:-translate-y-1 transition-transform cursor-pointer text-black" />
+                        </a>
+                        <a href="https://github.com/Robrowno" rel="noreferrer" target="_blank">
+                            <BsGithub className="text-3xl w-8 h-8 hover:-translate-y-1 transition-transform cursor-pointer text-black" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/christian-brown-ba7741171/" rel="noreferrer" target="_blank">
+                            <BsLinkedin className="text-3xl w-8 h-8 hover:-translate-y-1 transition-transform cursor-pointer text-black" />
+                        </a>
+                        <a href="https://www.facebook.com/christian.brown.100" rel="noreferrer" target="_blank">
+                            <BsFacebook className="text-3xl w-8 h-8 hover:-translate-y-1 transition-transform cursor-pointer text-black" />
+                        </a>
 
                     </div>
                 </div>

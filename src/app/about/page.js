@@ -11,7 +11,7 @@ export default function About() {
             </div>
             <div className="flex flex-col text-center items-center justify-center">
                 <div className=" w-60 h-60 rounded-full overflow-hidden shadow-xl">
-                    <Image className="shadow-lg" src="/images/me_in_france.jpeg" alt="a photo of me in front of Le Mont Saint-Michel" width={300} height={300} objectFit="cover" />
+                    <Image className="shadow-lg object-cover" src="/images/me_in_france.jpeg" alt="a photo of me in front of Le Mont Saint-Michel" width={300} height={300} />
                 </div>
                 <div className="mt-10">
                     <p className="text-xl font-semibold mb-4">Hi, I&apos;m Christian!</p>

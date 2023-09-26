@@ -3,75 +3,8 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { BsInstagram, BsLinkedin, BsFacebook } from "react-icons/bs";
-
-const latestResults = [
-    {
-        name: 'DST Leconsfield',
-        date: 'March 2022',
-        location: 'Leconsfield, UK',
-        car: 'Ford Escort MK2',
-        driver: 'Christian Brown',
-        coDriver: 'Harriet Worth',
-        team: 'Brown Rallying',
-        championshipResult: '1st',
-        classResult: '1st',
-        overallResult: '1st',
-        image: '/images/mini-fast-pic.JPG'
-    },
-    {
-        name: 'DST Leconsfield',
-        date: 'March 2022',
-        location: 'Leconsfield, UK',
-        car: 'Ford Escort MK2',
-        driver: 'Christian Brown',
-        coDriver: 'Harriet Worth',
-        team: 'Brown Rallying',
-        championshipResult: '1st',
-        classResult: '1st',
-        overallResult: '1st',
-        image: '/images/mini-fast-pic.JPG'
-    },
-    {
-        name: 'DST Leconsfield',
-        date: 'March 2022',
-        location: 'Leconsfield, UK',
-        car: 'Ford Escort MK2',
-        driver: 'Christian Brown',
-        coDriver: 'Harriet Worth',
-        team: 'Brown Rallying',
-        championshipResult: '1st',
-        classResult: '1st',
-        overallResult: '1st',
-        image: '/images/mini-fast-pic.JPG'
-    },
-    {
-        name: 'DST Leconsfield',
-        date: 'March 2022',
-        location: 'Leconsfield, UK',
-        car: 'Ford Escort MK2',
-        driver: 'Christian Brown',
-        coDriver: 'Harriet Worth',
-        team: 'Brown Rallying',
-        championshipResult: '1st',
-        classResult: '1st',
-        overallResult: '1st',
-        image: '/images/mini-fast-pic.JPG'
-    },
-    {
-        name: 'DST Leconsfield',
-        date: 'March 2022',
-        location: 'Leconsfield, UK',
-        car: 'Ford Escort MK2',
-        driver: 'Christian Brown',
-        coDriver: 'Harriet Worth',
-        team: 'Brown Rallying',
-        championshipResult: '1st',
-        classResult: '1st',
-        overallResult: '1st',
-        image: '/images/mini-fast-pic.JPG'
-    },
-
-]
+import { SteeringWheelButton, NotebookButton } from '../components/roundButtons.js';
+import latestResults from '../latestResults/rallyResults.json';
 
 
 export default function RallyingPage() {
@@ -110,12 +43,25 @@ export default function RallyingPage() {
                     </div>
 
                     <div className='mb-4'>
+                        <div className="flex flex-col md:flex-row lg:flex-row justify-center gap-4 text-center items-center mt-10">
+                            <div className='flex flex-col items-center justify-center w-1/2'>
+                                <p className="text-xl font-semibold mb-4">Driver Profile:</p>
+                                <SteeringWheelButton />
+                            </div>
+                            <div className='flex flex-col items-center justify-center w-1/2'>
+                                <p className="text-xl font-semibold mb-4">Co-Driver Profile:</p>
+                                <NotebookButton />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='mb-4'>
                         <p className="text-xl font-semibold mb-4">Latest Events/Results:</p>
                         <hr className="w-8 h-1 mx-auto my-4 bg-yellow-400 border-0 rounded"></hr>
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4">
                             {paginatedResults.map((result, index) => (
                                 <div key={index} className="bg-white p-4 rounded-md shadow-md">
-                                    <Image src={result.image} width={200} height={150} className="rounded-sm" />
+                                    <Image src={result.image} width={200} height={150} className="rounded-sm mx-auto" />
                                     <h2 className="text-lg font-semibold mt-2">{result.name}</h2>
                                     <p>Date: {result.date}</p>
                                     <p>Location: {result.location}</p>
@@ -130,7 +76,7 @@ export default function RallyingPage() {
                             ))}
                         </div>
                         <div className="mt-4">
-                            {Array(Math.ceil(latestResults.length / itemsPerPage)).fill(null).map((_, idx) => (
+                            {Array.from({ length: totalPages }).map((_, idx) => (
                                 <button
                                     key={idx}
                                     onClick={() => setCurrentPage(idx + 1)}
@@ -140,8 +86,8 @@ export default function RallyingPage() {
                                 </button>
                             ))}
                         </div>
-
                     </div>
+
 
                 </div>
 
