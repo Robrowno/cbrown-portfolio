@@ -1,5 +1,7 @@
 [
     {
+        "finished": true,
+        "reason": null,
         "name": "Trackrod Rally Yorkshire (Mini Challenge)",
         "date": "September 2023",
         "location": "Filey, England",
@@ -14,6 +16,8 @@
         "image": "/images/mini-fast-pic.JPG"
     },
     {
+        "finished": true,
+        "reason": null,
         "name": "Gareth Hall Memorial Rally",
         "date": "August 2023",
         "location": "Trawsfynydd, Wales",
@@ -24,10 +28,12 @@
         "championshipResult": "2nd",
         "classResult": "7th",
         "overallResult": "33rd",
-        "notes": "",
+        "notes": null,
         "image": "/images/mini-fast-pic.JPG"
     },
     {
+        "finished": false,
+        "reason": "Stuck and then crashed into on stage.",
         "name": "Plains Rally",
         "date": "May 2023",
         "location": "Bala, Wales",
@@ -42,6 +48,8 @@
         "image": "/images/mini-fast-pic.JPG"
     },
     {
+        "finished": true,
+        "reason": null,
         "name": "Rainworth Skoda Group Stages",
         "date": "April 2023",
         "location": "Leconsfield, England",
@@ -52,10 +60,12 @@
         "championshipResult": "2nd",
         "classResult": "8th",
         "overallResult": "44th",
-        "notes": "",
+        "notes": null,
         "image": "/images/mini-fast-pic.JPG"
     },
     {
+        "finished": true,
+        "reason": null,
         "name": "Corbeau Seats Rally Tendring & Clacton",
         "date": "April 2023",
         "location": "Clacton-on-Sea, England",
@@ -66,10 +76,12 @@
         "championshipResult": "N/A",
         "classResult": "8th",
         "overallResult": "44th",
-        "notes": "",
+        "notes": "My first closed road rally",
         "image": "/images/mini-fast-pic.JPG"
     },
     {
+        "finished": false,
+        "reason": "Gearbox issues",
         "name": "Altratech SMC Stages",
         "date": "April 2023",
         "location": "Anglesey, Wales",
@@ -84,6 +96,8 @@
         "image": "/images/mini-fast-pic.JPG"
     },
     {
+        "finished": true,
+        "reason": null,
         "name": "Get Jerky Rally North Wales (Mini Challenge)",
         "date": "March 2023",
         "location": "Welshpool, Wales",
@@ -94,10 +108,12 @@
         "championshipResult": "2nd",
         "classResult": "5th",
         "overallResult": "5th",
-        "notes": "",
+        "notes": null,
         "image": "/images/mini-fast-pic.JPG"
     },
     {
+        "finished": true,
+        "reason": null,
         "name": "Heroes Stages Rally",
         "date": "August 2022",
         "location": "Weeton, England",
@@ -112,6 +128,8 @@
         "image": "/images/mini-fast-pic.JPG"
     },
     {
+        "finished": true,
+        "reason": null,
         "name": "Greystoke Stages",
         "date": "July 2022",
         "location": "Penrith, England",
@@ -122,10 +140,12 @@
         "championshipResult": "6th",
         "classResult": "9th",
         "overallResult": "26th",
-        "notes": "",
+        "notes": null,
         "image": "/images/mini-fast-pic.JPG"
     },
     {
+        "finished": false,
+        "reason": "Rolled in SS2",
         "name": "Pirelli Plains Rally",
         "date": "May 2022",
         "location": "Bala, Wales",
@@ -140,6 +160,8 @@
         "image": "/images/mini-fast-pic.JPG"
     },
     {
+        "finished": true,
+        "reason": null,
         "name": "DST Leconsfield Stages",
         "date": "May 2022",
         "location": "Leconsfield, England",
@@ -154,6 +176,8 @@
         "image": "/images/mini-fast-pic.JPG"
     },
     {
+        "finished": true,
+        "reason": null,
         "name": "Altratech SMC Stages",
         "date": "April 2022",
         "location": "Anglesey, Wales",

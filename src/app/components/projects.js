@@ -1,4 +1,5 @@
-import React from "react"
+"use client";
+import React, { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { BsGithub, BsWindowFullscreen } from "react-icons/bs"
@@ -68,6 +69,23 @@ const projects = [
 
 export default function Projects() {
 
+    const [width, setWidth] = useState(0);
+
+    useEffect(() => {
+        setWidth(window.innerWidth);
+
+        const handleResize = () => {
+            setWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+
     return (
         <section id="projects">
             <div className="projects-content gradient-grey">
@@ -78,39 +96,76 @@ export default function Projects() {
                     {projects.map((project, idx) => {
                         return (
                             <div key={idx}>
-                                <SlideUp offset="-300px">
-                                    <div className="flex flex-col md:flex-col lg:flex-row md:space-y-6 lg:space-x-12">
-                                        <div className="mt-8 md:w-full lg:w-1/2">
-                                            <Link href={project.link} target="_blank">
-                                                <Image src={project.image}
-                                                    alt=""
-                                                    width={1000}
-                                                    height={1000}
-                                                    className="rounded-xl shadow-2xl hover:opacity-70"
-                                                />
-                                            </Link>
-                                        </div>
-                                        <div className="md:w-full lg:w-1/2 text-center mt-10">
-                                            <h4 className="text-xl lg:text-3xl font-bold mb-5">{project.name}</h4>
-                                            <p className="paragraph-desc text-md lg:text-xl leading-7">{project.description}</p>
-                                            <div>
-                                                <h5 className="text-md lg:text-xl font-semibold mt-4">Tech Stack:</h5>
-                                                <ul className="flex flex-wrap flex-row justify-center space-x-4 mt-4">
-                                                    {project.tech.map((tech, idx) => {
-                                                        return (
-                                                            <li key={idx} className=" text-xs lg:text-md font-semibold bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-700 rounded ">{tech}</li>
-                                                        )
-                                                    })}
-                                                </ul>
+                                {width > 768 ? (
+                                    <SlideUp offset="-300px">
+                                        <div className="flex flex-col md:flex-col lg:flex-row md:space-y-6 lg:space-x-12">
+                                            <div className="mt-8 md:w-full lg:w-1/2">
+                                                <Link href={project.link} target="_blank">
+                                                    <Image src={project.image}
+                                                        alt=""
+                                                        width={1000}
+                                                        height={1000}
+                                                        className="rounded-xl shadow-2xl hover:opacity-70"
+                                                    />
+                                                </Link>
                                             </div>
-                                            <div className="flex flex-row gap-9 justify-center space-x-4 mt-4">
-                                                <Link id="github-icon" href={project.github} target="_blank"><BsGithub size={30} className="hover:translate-y-1 transition-transform cursor-pointer hover:opacity-70" /></Link>
-                                                <Link id="window-icon" href={project.link} target="_blank"><BsWindowFullscreen size={30} className="hover:translate-y-1 transition-transform cursor-pointer hover:opacity-70" /></Link>
+                                            <div className="md:w-full lg:w-1/2 text-center mt-10">
+                                                <h4 className="text-xl lg:text-3xl font-bold mb-5">{project.name}</h4>
+                                                <p className="paragraph-desc text-md lg:text-xl leading-7">{project.description}</p>
+                                                <div>
+                                                    <h5 className="text-md lg:text-xl font-semibold mt-4">Tech Stack:</h5>
+                                                    <ul className="flex flex-wrap flex-row justify-center space-x-4 mt-4">
+                                                        {project.tech.map((tech, idx) => {
+                                                            return (
+                                                                <li key={idx} className=" text-xs lg:text-md font-semibold bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-700 rounded ">{tech}</li>
+                                                            )
+                                                        })}
+                                                    </ul>
+                                                </div>
+                                                <div className="flex flex-row gap-9 justify-center space-x-4 mt-4">
+                                                    <Link id="github-icon" href={project.github} target="_blank"><BsGithub size={30} className="hover:translate-y-1 transition-transform cursor-pointer hover:opacity-70" /></Link>
+                                                    <Link id="window-icon" href={project.link} target="_blank"><BsWindowFullscreen size={30} className="hover:translate-y-1 transition-transform cursor-pointer hover:opacity-70" /></Link>
+                                                </div>
                                             </div>
                                         </div>
+                                    </SlideUp>
+                                ) : (
+                                    <div>
+                                        <div className="flex flex-col md:flex-col lg:flex-row md:space-y-6 lg:space-x-12">
+                                            <div className="mt-8 md:w-full lg:w-1/2">
+                                                <Link href={project.link} target="_blank">
+                                                    <Image src={project.image}
+                                                        alt=""
+                                                        width={1000}
+                                                        height={1000}
+                                                        className="rounded-xl shadow-2xl hover:opacity-70"
+                                                    />
+                                                </Link>
+                                            </div>
+                                            <div className="md:w-full lg:w-1/2 text-center mt-10">
+                                                <h4 className="text-xl lg:text-3xl font-bold mb-5">{project.name}</h4>
+                                                <p className="paragraph-desc text-md lg:text-xl leading-7">{project.description}</p>
+                                                <div>
+                                                    <h5 className="text-md lg:text-xl font-semibold mt-4">Tech Stack:</h5>
+                                                    <ul className="flex flex-wrap flex-row justify-center space-x-4 mt-4">
+                                                        {project.tech.map((tech, idx) => {
+                                                            return (
+                                                                <li key={idx} className=" text-xs lg:text-md font-semibold bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-700 rounded ">{tech}</li>
+                                                            )
+                                                        })}
+                                                    </ul>
+                                                </div>
+                                                <div className="flex flex-row gap-9 justify-center space-x-4 mt-4">
+                                                    <Link id="github-icon" href={project.github} target="_blank"><BsGithub size={30} className="hover:translate-y-1 transition-transform cursor-pointer hover:opacity-70" /></Link>
+                                                    <Link id="window-icon" href={project.link} target="_blank"><BsWindowFullscreen size={30} className="hover:translate-y-1 transition-transform cursor-pointer hover:opacity-70" /></Link>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                </SlideUp>
+                                )}
                             </div>
+
                         )
                     })}
 

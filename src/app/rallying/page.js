@@ -27,17 +27,17 @@ export default function RallyingPage() {
                         <p className="text-xl font-semibold mb-4">My Rallying Story:</p>
                         <hr className="w-8 h-1 mx-auto my-4 bg-yellow-400 border-0 rounded"></hr>
                         <Image className='mx-auto rounded-sm' src="/images/mini-fast-pic.JPG" width={600} height={400} />
-                        <p className='text-sm text-gray-600'>My First Rally as a Driver (March 2022)</p>
+                        <p className='text-sm text-gray-600 pb-4'>My First Rally as a Driver (March 2022)</p>
 
-                        <p> I have a background in Karting from a young age, so I have been into motorsport for some time now whether competing or not.
+                        <p className='w-[80%] mx-auto p-1'> I have a background in Karting from a young age, so I have been into motorsport for some time now whether competing or not.
                             A chance encounter with a racing driver in 2021 led me to the world of Rallying, and I was instantly hooked.
                             I attended a course at the London Rally School and got my first taste of Rallying in a Ford Escort MK2.
                             From there, I decided it was time to get into my own car and start competing. I got my licence in January 2022, attended my first event with the Southern Car Club in February 2022 and entered my first rally in March 2022.
                         </p>
-                        <p>In my second ever rally, with co-driver Harriet Worth by my side, we took a round win at DST Leconsfield. It was an incredible achievement for both of us and is
+                        <p className='w-[80%] mx-auto p-1'>In my second ever rally, with co-driver Harriet Worth by my side, we took a round win at DST Leconsfield. It was an incredible achievement for both of us and is
                             a memory in motorsport that I will cherish forever. We were even featured in an MSUK article following the win: <Link className="text-blue-500" href="https://www.motorsportuk.org/the-pocket-rockets-bringing-low-cost-rallying-to-the-fore/">Link to Article.</Link>
                         </p>
-                        <p>Following a few more drives, that included a big crash, exploring gravel and tarmac events and more across the UK, I decided that I would like to try competing on the other side of the car.
+                        <p className='w-[80%] mx-auto p-1'>Following a few more drives, that included a big crash, exploring gravel and tarmac events and more across the UK, I decided that I would like to try competing on the other side of the car.
                             I made the decision at the end of 2022 to begin Co-Driving for the 2023 season, and I have been doing so ever since.
                         </p>
                     </div>
@@ -63,15 +63,25 @@ export default function RallyingPage() {
                                 <div key={index} className="bg-white p-4 rounded-md shadow-md">
                                     <Image src={result.image} width={200} height={150} className="rounded-sm mx-auto" />
                                     <h2 className="text-lg font-semibold mt-2">{result.name}</h2>
-                                    <p>Date: {result.date}</p>
-                                    <p>Location: {result.location}</p>
-                                    <p>Car: {result.car}</p>
-                                    <p>Driver: {result.driver}</p>
-                                    <p>Co-Driver: {result.coDriver}</p>
-                                    <p>Team: {result.team}</p>
-                                    <p>Championship Result: {result.championshipResult}</p>
-                                    <p>Class Result: {result.classResult}</p>
-                                    <p>Overall Result: {result.overallResult}</p>
+                                    <p><span className='font-semibold'>Date:</span> {result.date}</p>
+                                    <p><span className='font-semibold'>Location:</span> {result.location}</p>
+                                    <p><span className='font-semibold'>Car:</span> {result.car}</p>
+                                    <p><span className='font-semibold'>Driver:</span> {result.driver}</p>
+                                    <p><span className='font-semibold'>Co-Driver:</span> {result.coDriver}</p>
+                                    <p><span className='font-semibold'>Team:</span> {result.team}</p>
+                                    {result.finished ? (
+                                        <>
+                                            <p><span className='font-semibold'>Championship Result:</span> {result.championshipResult}</p>
+                                            <p><span className='font-semibold'>Class Result:</span> {result.classResult}</p>
+                                            <p><span className='font-semibold'>Overall Result:</span> {result.overallResult}</p>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <p><span className='font-semibold'>Result:</span> Retired</p>
+                                            <p><span className='font-semibold'>Reason:</span> {result.reason}</p>
+                                        </>
+                                    )}
+
                                 </div>
                             ))}
                         </div>
@@ -94,10 +104,10 @@ export default function RallyingPage() {
                 <div className='mb-4'>
                     <p className="text-xl font-semibold mb-4">Need a Co-Driver?</p>
                     <hr className="w-8 h-1 mx-auto my-4 bg-yellow-400 border-0 rounded"></hr>
-                    <p>Do you need a co-driver for an upcoming event? Even at fairly short notice I might be able to help!
+                    <p className='w-[80%] mx-auto p-1'>Do you need a co-driver for an upcoming event? Even at fairly short notice I might be able to help!
                         Send me a message through my contact page and give me some rough details about the event and I will get back to you as soon as possible.
                     </p>
-                    <p>Alternatively, feel free to send me a DM on Instagram, LinkedIn or Facebook and we can discuss next steps from there!</p>
+                    <p className='pb-2'>Alternatively, feel free to send me a DM on Instagram, LinkedIn or Facebook and we can discuss next steps from there!</p>
 
                     <div className="inline-flex justify-center space-x-4 lg:space-x-8 bg-yellow-400 p-2 rounded-xl mt-3">
                         <a href="https://www.instagram.com/cbrownrally/" rel="noreferrer" target="_blank">
