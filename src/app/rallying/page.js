@@ -101,7 +101,7 @@ export default function RallyingPage() {
 
                 </div>
 
-                <div className='mb-4'>
+                <div className='mb-10 md:mb-4'>
                     <p className="text-xl font-semibold mb-4">Need a Co-Driver?</p>
                     <hr className="w-8 h-1 mx-auto my-4 bg-yellow-400 border-0 rounded"></hr>
                     <p className='w-[80%] mx-auto p-1'>Do you need a co-driver for an upcoming event? Even at fairly short notice I might be able to help!

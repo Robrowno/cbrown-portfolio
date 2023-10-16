@@ -11,7 +11,8 @@ function Footer() {
                         <small className="mt-3 hidden md:block">© 2023 Christian Brown</small>
                     </div>
 
-                    <div className="flex justify-center flex-col space-y-4 md:space-y-0 md:space-x-4 md:flex-row lg:space-x-8 md:mr-3">
+                    {/* Remove md:flex-col from the following div */}
+                    <div className="flex justify-center space-x-10 md:space-x-8 md:mr-3">
                         <a href="https://www.instagram.com/cbrownrally/" rel="noreferrer" target="_blank">
                             <BsInstagram className="text-3xl w-8 h-8 hover:-translate-y-1 transition-transform cursor-pointer text-white" />
                         </a>

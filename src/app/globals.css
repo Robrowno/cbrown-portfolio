@@ -6,7 +6,6 @@
 :root {
 
     --gradient-grey: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    --red-hover-btn:
 }
 
 #logo {
@@ -148,6 +147,14 @@ hr {
 
     ul {
         font-size: smaller;
+    }
+}
+
+@media screen and (max-width: 639px) {
+
+    .home-content p:first-child,
+    .rallying-content p:first-child {
+        margin-top: 3rem;
     }
 }
 

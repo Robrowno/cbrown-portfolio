@@ -33,10 +33,10 @@ function Navbar() {
                     </ul>
                     {/* Mobile Menu */}
                     <div onClick={toggleNavbar} className=" flex items-center sm:hidden cursor-pointer">
-                        <BsList className="text-3xl w-8 h-8 text-white mobile-menu-button" />
+                        <BsList className="text-3xl w-8 h-8 mr-4 text-white mobile-menu-button" />
                     </div>
                 </div>
-                <div className={navbarOpen ? "fixed top-0 left-0 w-[88%] sm:hidden h-screen bg-[#ecf0f3] p-6 ease-in-out duration-500" : "fixed left-[-100] top-0 p-10 ease-in-out duration-500 hidden"}>
+                <div className={navbarOpen ? "fixed top-0 left-0 w-[100%] sm:hidden h-screen bg-[#ecf0f3] p-6 ease-in-out duration-500" : "fixed left-[-100] top-0 p-10 ease-in-out duration-500 hidden"}>
                     <div onClick={toggleNavbar} className="flex justify-end w-full items-center">
                         <BsX className="text-3xl w-9 h-9 text-black mobile-menu-button border-2 border-black rounded-lg" />
                     </div>

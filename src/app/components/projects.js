@@ -132,7 +132,7 @@ export default function Projects() {
                                 ) : (
                                     <div>
                                         <div className="flex flex-col md:flex-col lg:flex-row md:space-y-6 lg:space-x-12">
-                                            <div className="mt-8 md:w-full lg:w-1/2">
+                                            <div className="md:mt-8 md:w-full lg:w-1/2">
                                                 <Link href={project.link} target="_blank">
                                                     <Image src={project.image}
                                                         alt=""
